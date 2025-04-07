@@ -72,7 +72,7 @@ docker run -d -p 5000:5000 sorting-visualizer:latest
 Outcome
 
     Successfully created and ran a Docker image from the application
-    ![Screenshot 2025-04-08 at 00-22-58 Sorting Visualizer](https://github.com/user-attachments/assets/d2cab024-44c4-40b9-a30c-ed7f6686dcb3)
+    ![Screenshot 2025-04-08 at 00-22-58 Sorting Visualizer](https://github.com/user-attachments/assets/80432355-0c65-4244-b595-2a0b79cd72fb)
 
 
 
