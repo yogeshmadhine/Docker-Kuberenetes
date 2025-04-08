@@ -1,0 +1,38 @@
+deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sorting-visualizer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sorting-visualizer
+  template:
+    metadata:
+      labels:
+        app: sorting-visualizer
+    spec:
+      containers:
+      - name: sorting-visualizer
+        image: sorting-visualizer:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+
+
+2:service.yaml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: sorting-visualizer-service
+spec:
+  type: NodePort
+  selector:
+    app: sorting-visualizer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30036
