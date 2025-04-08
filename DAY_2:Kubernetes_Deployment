@@ -1,0 +1,31 @@
+Day 2 - Kubernetes Deployment Log
+
+What I Explored and Learned Today
+
+Understood the concept of Kubernetes and its differences from Docker.
+
+Learned why Kubernetes is used and where it is useful.
+
+Installed Minikube on Windows by downloading the executable and adding it to the system PATH.
+
+Installed kubectl and placed it alongside Minikube for command-line control over Kubernetes.
+
+Verified installation of Minikube and kubectl via command prompt.
+
+Started a local Kubernetes cluster using Minikube.
+
+Confirmed that Docker image for the Sorting Visualizer was already created and working.
+
+Used the minikube image load command to load the local Docker image into the Minikube cluster.
+
+Created Kubernetes configuration files: deployment.yaml and service.yaml.
+
+Applied the configurations using kubectl apply -f to create the pod and service.
+
+Verified that the pod was running and the service was created.
+
+Used minikube service sorting-visualizer-service to expose the application.
+
+Accessed the Sorting Visualizer in the browser through the Minikube tunnel URL.
+
+Understood that the terminal must remain open while using Minikube tunnel with Docker driver.
